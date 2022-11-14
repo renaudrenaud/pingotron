@@ -1,5 +1,5 @@
 # pingotron
-Ping hosts write in postgres and show the results in grafana
+Ping hosts, write in postgres and show the results in grafana
 
 ## Prerequistes
 1. one instance of Postgresql
