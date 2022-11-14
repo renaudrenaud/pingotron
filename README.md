@@ -37,11 +37,13 @@ source env_var.sh
 |HOSTNAME1="192.168.195.133" | which ip to ping|
 
 Please note you can ping until 100 hostnames add a parameter for each one like
+
+```
 HOSTNAME0="192.168.196.100"
 HOSTNAME1="192.168.196.101"
 HOSTNAME2="192.168.196.102"
 ...
-
+```
 
 
 ## Usage
