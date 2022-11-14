@@ -4,7 +4,7 @@ Horrible code to ping IP addresses and write the result it in a table
 1 - DATABASE
   please provide env variables for database connection:
 
-  export PG_IP="192.168.1.120"
+  export PG_URL="192.168.1.120"
   export PG_PORT="5432"
   export PG_USER="postgresUSER"
   export PG_PASSWORD="postgresPW"
@@ -67,7 +67,7 @@ class Pingotron:
         self.PG_PASSWORD = os.environ.get('PG_PASSWORD','postgres')
         self.PG_DB = os.environ.get('PG_DB','postgres')
 
-        self.pg = Postgres(os.environ['PG_IP'], os.environ['PG_PORT'], os.environ['PG_DB'], os.environ['PG_USER'], os.environ['PG_PASSWORD'])
+        self.pg = Postgres(os.environ['PG_URL'], os.environ['PG_PORT'], os.environ['PG_DB'], os.environ['PG_USER'], os.environ['PG_PASSWORD'])
         
         # GRAB the list of IP we want to check
         # User can define up to 100 IP in the env variable
